@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 :root {
@@ -10,12 +9,22 @@
 }
 
 body {
+  box-sizing: border-box;
   background-color: #f5f4f0;
 }
 
+p {
+  text-align: justify;
+}
+
+#container {
+  width: min(1120px, calc(100% - 48px));
+  margin: 80px auto 48px;
+}
+
 main {
-  width: 1120px;
-  margin: 80px auto 65px;
+  width: 100%;
+  margin-bottom: 65px;
 }
 
 .headline {
@@ -28,11 +37,12 @@ main {
 
 h1 {
   margin: 8px 0 40px;
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 img {
   border-radius: 28px;
+  width: 100%;
 }
 
 .legenda {
@@ -56,7 +66,7 @@ img {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 #title-list h2 {
@@ -72,21 +82,30 @@ ul {
 }
 
 li h3 {
-  font-size: 28px;
+  font-size: 1.75rem;
   margin: 10px 0 4px;
   padding-left: 4px;
 }
 
-#final-description {
+#final-description p {
   text-align: center;
   margin-top: 40px;
 }
 
 footer {
+  width: 100%;
   font-family: "Alice", serif;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4px;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
+}
+
+footer span {
+  text-wrap: nowrap;
+}
+
+footer img {
+  width: 1rem;
 }
